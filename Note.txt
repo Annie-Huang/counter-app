@@ -1,0 +1,129 @@
+Learn React - React Crash Course 2018 - React Tutorial with Examples
+https://www.youtube.com/watch?v=Ke90Tje7VS0&list=PLiIkHJ5qcHcrS-Yf1yYE3yZUbc9nFT-Si
+
+C:\react\react-app
+
+C:\react\react-app>npm start
+http://localhost:3000/
+
+############################################
+## Lesson 1  
+############################################
+
+create-react-app will create Development Server | Webpack | Babel
+
+C:\react>create-react-app react-app
+
+npm start
+npm run build
+npm test
+npm run eject
+
+C:\react\react-app>npm start
+http://localhost:3000/
+
+https://babeljs.io/repl		<<< You can see it currently using Presets of es2015, stage-2, react.
+
+############################################
+## Lesson 2 - Start at around 24min.  
+############################################
+What you will learn:
+JSX
+Rendering Lists
+Conditional Rendering
+Handling Events
+Updating the State
+
+I didn't do the following part. But just renaming react-app project in intellij and window explorer to counter-app
+C:\react>create-react-app counter-app
+
+C:\react\counter-app>npm i bootstrap@4.1.1
+
+Very good explaination of when to use .bind when don't need to use .bind in around 1:07:56
+    // Get handleIncrement to has access to this method:
+    // Method 1: use constructor, and then use handleIncrement(){...}
+    constructor() {
+        super();
+        console.log('Constructor', this);
+        this.handleIncrement = this.handleIncrement.bind(this);
+    }
+    handleIncrement() {
+        console.log("Increment Clicked", this.state.count);
+        // obj.method() >> this refers to obj.
+        // function() >> this refers to window object. But if 'use strict' mode is use >> it become undefined.
+    }
+
+    // Method 2: use handleIncrement = () => {...}
+    // Arrow function don't remind that 'this' keyword, they inherited.
+    handleIncrement = () => {
+        console.log("Increment Clicked", this.state.count);
+    };
+
+
+############################################
+## Lesson 3 - Start at around 1:16min.  
+############################################
+What you will learn:
+Pass Data.
+Raise and Handle Events
+Multiple Components in Sync
+Functional Components
+Lifecycle Hooks
+
+
+############################################
+## Lesson 4 - Start at around 1:55min.  
+############################################
+      App
+    /    \
+NavBar  Counters
+          |
+        Counter
+
+Props
+Raising and Handling Events
+Lifting the State
+Functional Components.
+Lifecycle Hooks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
